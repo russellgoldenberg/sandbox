@@ -6,4 +6,4 @@ setup:
 	npm i
 
 server:
-	browser-sync start --files "**/*" --server 
+	browser-sync start --files "**/*" --server --no-notify --logLevel "silent"
