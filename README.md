@@ -6,5 +6,5 @@ Starter files for prototypes
 
 dependencies: [node](http://nodejs.org) and [browsersync](http://browsersync.io)
 
-* clone repo
+* `git clone https://github.com/russellgoldenberg/sandbox.git`
 * `npm i`
