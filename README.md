@@ -7,7 +7,6 @@ Starter files for prototypes
 dependencies: [node](http://nodejs.org) and [browsersync](http://browsersync.io)
 
 * `curl -LkO https://goo.gl/0Z35CE; make setup;`
-* `npm i`
 
 ## Usage
 
