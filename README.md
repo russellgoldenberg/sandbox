@@ -4,10 +4,10 @@ Starter files for prototypes
 
 ## Setup
 
-dependencies: [node](http://nodejs.org) and [browsersync](http://browsersync.io)
+dependencies: [node](http://nodejs.org)
 
-* `curl -Lk https://goo.gl/0Z35CE > Makefile; make setup;`
+* `curl -Lk https://goo.gl/0Z35CE > Makefile; make;`
 
 ## Usage
 
-Run `make` to start local server
+Run `npm start` to start local server
