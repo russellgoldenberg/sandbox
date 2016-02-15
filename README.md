@@ -11,7 +11,3 @@ dependencies: [node](http://nodejs.org)
 ## Usage
 
 Run `npm start`
-
-## Developer notes
-
-`zip -q -r node_modules.zip node_modules`
