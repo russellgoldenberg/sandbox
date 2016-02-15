@@ -2,5 +2,5 @@ all:
 	curl -Lk https://github.com/russellgoldenberg/sandbox/archive/master.zip > temp.zip
 	unzip -q temp.zip
 	mv sandbox-master/* .
-	rm -rf temp.zip sandbox-master Makefile
-	npm i
+	unzip -q node_modules.zip
+	rm -rf temp.zip sandbox-master Makefile node_modules.zip

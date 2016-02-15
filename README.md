@@ -10,4 +10,8 @@ dependencies: [node](http://nodejs.org)
 
 ## Usage
 
-Run `npm start` to start local server
+Run `npm start`
+
+## Developer notes
+
+`zip -q -r node_modules.zip node_modules`
