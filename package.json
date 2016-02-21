@@ -15,9 +15,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "npm-run-all compile server",
+    "start": "npm-run-all --silent --parallel compile server open",
     "compile": "babel main.js --out-file compiled.js",
-    "server": "light-server -q -s . -w 'main.js # npm run compile' -w 'main.css # # reloadcss' -w 'index.html'"
+    "server": "light-server -q -s . -w 'main.js # npm run compile' -w 'main.css # # reloadcss' -w 'index.html'",
+    "open": "open http://localhost:4000"
   },
   "author": "russell goldenberg",
   "license": "MIT"
