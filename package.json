@@ -7,18 +7,21 @@
     "test": "test"
   },
   "dependencies": {
-    "babel-cli": "^6.5.1",
-    "babel-preset-es2015": "^6.5.0",
-    "light-server": "^1.1.5",
-    "npm-run-all": "^1.5.1"
+    "d3": "^3.5.15"
   },
   "devDependencies": {
-    "d3": "^3.5.15"
-    },
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-stage-1": "^6.5.0",
+    "light-server": "^1.1.5",
+    "npm-run-all": "^1.5.1",
+    "stylus": "^0.54.5"
+  },
   "scripts": {
-    "start": "npm-run-all --silent --parallel compile server open",
-    "compile": "babel main.js --out-file compiled.js",
-    "server": "light-server -q -s . -w 'main.js # npm run compile' -w 'main.css # # reloadcss' -w 'index.html'",
+    "start": "npm-run-all --silent --parallel babel stylus server open",
+    "babel": "babel main.js --out-file bundle.js",
+    "stylus": "stylus main.styl -o bundle.css",
+    "server": "light-server -q -s . -w 'main.js # npm run babel' -w 'main.styl # npm run stylus' -w 'bundle.css # # reloadcss' -w 'index.html'",
     "open": "open http://localhost:4000"
   },
   "author": "russell goldenberg",
